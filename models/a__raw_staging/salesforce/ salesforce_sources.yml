@@ -4,18 +4,15 @@ version: 2
 sources:
   - name: salesforce
     description: sample salesforce data
-    database: steve_d_raw_data
-    schema: sample_salesforce_data
+    database: LARGE_DBT_CLOUD_PROJECT_RAW_DATA
+    schema: SAMPLE_SALESFORCE_DATA
     tables:
       - name: accounts
         description: all company accounts
-          
       - name: contacts
         description: all company contacts
-
       - name: leads
         description: company leads
-
       - name: opportunites
         description: company opportunites
         
