@@ -1,14 +1,11 @@
+with 
 
-with source as (
-
+source as (
     select * from {{ source('salesforce', 'contacts') }}
-
 ),
 
 renamed as (
-
     select
-    
         batchid,
         contactid,
         companyextid as accountid,
@@ -18,9 +15,7 @@ renamed as (
         country,
         datecreated,
         modifieddate
-
     from source
-
 )
 
 select * from renamed
